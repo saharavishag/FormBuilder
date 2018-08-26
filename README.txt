@@ -17,6 +17,8 @@ server.py
 ---------------------------------
 #######
 Comments:
+*** The communication between client and server is not stable ***
+*** That means that each one works by itself but I didn't manage to send requests from client yet.***
 Client:
 the frontend is written with Angular6, typescrips, html
 
