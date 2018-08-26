@@ -1,0 +1,22 @@
+ul{
+    display: inline-block;
+    width: 100%;
+    background: #d2d8dd;
+    color: #ffffff;
+    margin:0;
+    padding: 0;
+}
+ul li{
+    display: inline;
+    margin:0;
+    padding: 0;
+}
+ul li h2{    
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: blink;
+}
+h4 {
+    color: #369;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100%;
+  }

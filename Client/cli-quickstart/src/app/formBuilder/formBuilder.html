@@ -1,0 +1,28 @@
+
+<form id="formBuilder" [formGroup]="form" (ngSubmit)="onSubmit()">
+    <h4>{{title}}</h4>
+    Form Name: <input type="text" formControlName="formName">
+    <br/>
+    <br/>
+    <h4>Here you can add your form's fields:</h4>
+    Label: <input #label> 
+    Input Name: <input #inputName> 
+    Input Type: <input #inputType> 
+    <br/>
+    <br/>
+    <button (click)="addField(label.value, inputName.value, inputType.value)">Add Field</button>
+    <br/><br/>
+    <ul>
+        <li *ngFor="let field of formFields">
+            <h2>&nbsp;Label: {{field.label}} &nbsp;&nbsp;&nbsp;&nbsp; 
+                Input Name: {{field.inputName}} &nbsp;&nbsp;&nbsp;&nbsp; 
+                Input Type: {{field.inputType}}</h2>
+        </li>
+    </ul>
+    <br/>
+    <br/>
+    <br/>
+    <button type="submit" (click)="onSubmit()"
+        [disabled]="form.invalid">Save Form</button>
+</form>
+
